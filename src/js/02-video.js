@@ -2,7 +2,7 @@
 import Player from '@vimeo/player';
 
 // Import lodash.throttle library
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 
 // Search for iframe#vimeo-player element
 const video = document.querySelector("#vimeo-player");
