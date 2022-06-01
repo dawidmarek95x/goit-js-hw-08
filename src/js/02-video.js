@@ -8,7 +8,7 @@ import throttle from 'lodash.throttle';
 const video = document.querySelector("#vimeo-player");
 
 // Create an instance of the Player class for the iframe#vimeo-player element
-const player = new Player(video);
+const player = new Vimeo.Player(video);
 
 // Adding a timeupdate event listener for the 1 second delayed player instance
 player.on("timeupdate", throttle(saveWatchTime, 1000));
